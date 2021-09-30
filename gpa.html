@@ -1,0 +1,197 @@
+<!-- <body>
+    <center>
+        <div class="cgpacalc_container">
+            <div class="cgpacalc_title">
+                <h2>CGPA CALCULATOR</h2>
+            </div>
+            <input type="text" id="first" placeholder="Enter your First sem GPA">
+            <input type="text" id="second" placeholder="Enter your Second sem GPA">
+            <input type="text" id="third" placeholder="Enter your Third sem GPA">
+            <input type="text" id="fourth" placeholder="Enter your Fourth sem GPA">
+            <input type="text" id="fifth" placeholder="Enter your Fifth sem GPA">
+            <input type="text" id="sixth" placeholder="Enter your Sixth sem GPA">
+            <input type="text" id="seventh" placeholder="Enter your Seventh sem GPA">
+            <input type="text" id="eighth" placeholder="Enter your Eighth sem GPA">
+            <div class="cgpacalc_output">
+                <h3>TOTAL CGPA :</h3>
+                <button id="sub" class="btn btn-dark" style=" margin-right: 20px;">ANSWER</button>
+                <button id="res" class="btn btn-primary" style=" margin-right: 20px;">RESET</button>
+                <button class="btn btn-warning" style=" margin-right: 20px;"
+                    onclick="window.location.href = 'index.html';">BACK</button>
+            </div>
+        </div>
+    </center>
+
+    <script src="index.js"></script>
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>CGPA Calculator</title>
+    <style>
+        body {
+            background-color: #68DB8A;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="logo.png" style="width: 1.5em;"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="cgpa.html">CGPA calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="gpa.html">GPA calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="ebbill.html">EB Bill calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="age.html">Age calculator</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <center>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="cgpacalc_container">
+            <div class="cgpacalc_title">
+                <h2>GPA CALCULATOR</h2>
+            </div>
+            <br>
+            <span>
+                <input type="text" id="code1" placeholder="Enter course code">
+                <input type="text" id="name1" placeholder="Enter course name">
+                <input type="text" id="onecc" placeholder="Enter course credits">
+
+                <input type="text" id="onel" placeholder="Enter letter grade">
+            </span>
+            <br>
+            <span>
+                <input type="text" id="code2" placeholder="Enter course code">
+                <input type="text" id="name2" placeholder="Enter course name">
+                <input type="text" id="twocc" placeholder="Enter course credits">
+
+                <input type="text" id="twol" placeholder="Enter letter grade">
+            </span>
+            <br>
+            <span>
+                <input type="text" id="code3" placeholder="Enter course code">
+                <input type="text" id="name3" placeholder="Enter course name">
+                <input type="text" id="threecc" placeholder="Enter course credits">
+
+                <input type="text" id="threel" placeholder="Enter letter grade">
+            </span>
+            <br>
+            <span>
+                <input type="text" id="code4" placeholder="Enter course code">
+                <input type="text" id="name4" placeholder="Enter course name">
+                <input type="text" id="fourcc" placeholder="Enter course credits">
+
+                <input type="text" id="fourl" placeholder="Enter letter grade">
+            </span>
+            <br>
+            <span>
+                <input type="text" id="code5" placeholder="Enter course code">
+                <input type="text" id="name5" placeholder="Enter course name">
+                <input type="text" id="fivecc" placeholder="Enter course credits">
+
+                <input type="text" id="fivel" placeholder="Enter letter grade">
+            </span>
+            <br>
+            <span>
+                <input type="text" id="code6" placeholder="Enter course code">
+                <input type="text" id="name6" placeholder="Enter course name">
+                <input type="text" id="sixcc" placeholder="Enter course credits">
+
+                <input type="text" id="sixl" placeholder="Enter letter grade">
+            </span>
+            <br>
+            <span>
+                <input type="text" id="code7" placeholder="Enter course code">
+                <input type="text" id="name7" placeholder="Enter course name">
+                <input type="text" id="sevencc" placeholder="Enter course credits">
+
+                <input type="text" id="sevenl" placeholder="Enter letter grade">
+            </span>
+            <br>
+            <span>
+                <input type="text" id="code8" placeholder="Enter course code">
+                <input type="text" id="name8" placeholder="Enter course name">
+                <input type="text" id="eightcc" placeholder="Enter course credits">
+
+                <input type="text" id="eightl" placeholder="Enter letter grade">
+            </span>
+            <br>
+            <span>
+                <input type="text" id="code9" placeholder="Enter course code">
+                <input type="text" id="name9" placeholder="Enter course name">
+                <input type="text" id="ninecc" placeholder="Enter course credits">
+
+                <input type="text" id="ninel" placeholder="Enter letter grade">
+            </span>
+            <br>
+            <span>
+                <input type="text" id="code10" placeholder="Enter course code">
+                <input type="text" id="name10" placeholder="Enter course name">
+                <input type="text" id="tencc" placeholder="Enter course credits">
+
+                <input type="text" id="tenl" placeholder="Enter letter grade">
+            </span>
+            <br>
+            <div class="cgpacalc_output">
+                <h3>GPA :</h3>
+                <button id="sub" class="btn btn-dark" style=" margin-right: 20px;">ANSWER</button>
+                <button id="res" class="btn btn-primary" style=" margin-right: 20px;">RESET</button>
+                <button class="btn btn-warning" style=" margin-right: 20px;"
+                    onclick="window.location.href = 'index.html';">BACK</button>
+            </div>
+        </div>
+
+        <script src="gpa.js"></script>
+    </center>
+</body>
+
+
+</html>

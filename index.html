@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="app1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="logo.png" style="width: 1.5em;"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="cgpa.html">CGPA calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="gpa.html">GPA calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="ebbill.html">EB Bill calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="age.html">Age calculator</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <center>
+            <br>
+            <br>
+            <div class="cgpacalc_container">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-2">
+                        <h2>CGPA calculator</h2>
+                        <p>
+                            Cumulative Grade Point Average (CGPA) is derived by adding the Total Quality Points (TQP)
+                            for
+                            all semesters to date and dividing by the Total Credit Units (TCU) for all semesters to
+                            date.
+                        </p>
+                        <br>
+                        <button type="button" onclick="window.location.href = 'cgpa.html';">CLICK ME<img
+                                src=" arrow2.jpg"></button>
+                    </div>
+                    <div class="col-2">
+                        <h2>GPA calculator</h2>
+                        <p>GPA calculator is Grade point average(GPA) calculator to calculate your GPA, divide the total
+                            number of grade points earned by the total number of letter graded units undertaken. </p>
+                        <br>
+                        <button type="button" onclick="window.location.href = 'gpa.html';">CLICK ME<img
+                                src=" arrow2.jpg"></button>
+                    </div>
+                    <div class="col-2">
+                        <h2>EB Bill calculator</h2>
+                        <p>To calculate your electric bill, you’ll need to figure the energy usage of each of the
+                            appliances
+                            and electronic devices in your home. In an ideal world, estimating your electricity usage
+                            will be easy.
+                        </p>
+                        <br>
+                        <button type="button" onclick="window.location.href = 'ebbill.html';">CLICK ME<img
+                                src="arrow2.jpg"></button>
+                    </div>
+                    <div class="col-2">
+                        <h2>Age calculator</h2>
+                        <p>If you want to know exactly how old you are, With the age calculator, you can easily discover
+                            how many years,
+                            months, weeks, days and hours have passed since you were born.
+                        </p>
+                        <br>
+                        <button type="button" onclick="window.location.href = 'age.html';">CLICK ME<img
+                                src="arrow2.jpg"></button>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var menulist = document.getElementById("menulist");
+                menulist.style.maxHeight = "0px";
+                function togglemenu() {
+                    if (menulist.style.maxHeight == "0px") {
+                        menulist.style.maxHeight = "130px";
+                    } else {
+                        menulist.style.maxHeight = "0px";
+                    }
+                }
+            </script>
+
+            <!-- <script src="gpa.js"></script> -->
+        </center>
+
+
+
+
+</body>
+
+</html>
